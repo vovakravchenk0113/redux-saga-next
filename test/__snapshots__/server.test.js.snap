@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapped component awaits asynchronous getInitialProps 1`] = `
+<Connect(AsyncGetInitialProps)
+  isServer={true}
+  staticProp="Static message from getInitialProps()"
+/>
+`;
+
+exports[`Wrapped component awaits synchronous getInitialProps 1`] = `
+<Connect(SyncGetInitialProps)
+  isServer={true}
+  staticProp="Static message from getInitialProps()"
+/>
+`;
+
+exports[`Wrapped component passes along React props 1`] = `<Connect(FunctionalComponent) />`;
+
+exports[`Wrapped component skips getInitialProps when it does not exist 1`] = `
+<Connect(ClassComponent)
+  isServer={true}
+/>
+`;
